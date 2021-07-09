@@ -2,9 +2,8 @@
 .table {
 	width: 100%;
 	&__wrapper {
-		// overflow: hidden;
-		// overflow-x: auto;
-		min-height: 400px;
+		overflow-x: auto;
+		min-height: 600px;
 	}
 	&__header {
 		background-color: #f8f9fb;

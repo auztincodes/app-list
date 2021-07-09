@@ -42,9 +42,7 @@
 				z-index: 100;
                 background: #fff;
 				min-width: 100px;
-				@include query(mobile, max) {
-					right: auto;
-				}
+				
 			}
 			&:focus {
 				outline: none;

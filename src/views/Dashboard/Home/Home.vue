@@ -106,13 +106,13 @@
                 v-model="newApp.name"
                 placeholder="Application name"
               />
-              <div class="flex flex-spaced">
-                <div class="form-group">
+              <div class="grid__layout grid-gap-0">
+                <div class="form-group col-6-12 col-md-12">
                   <label class="select-label" for="app-type">Type</label>
                   <select
                     class="select-input"
                     v-model="newApp.type"
-                    width="204px"
+                    width="100%"
                     name="app-type"
                     id="app-type"
                   >
@@ -120,12 +120,12 @@
                     <option value="Mobile">Mobile</option>
                   </select>
                 </div>
-                <div class="form-group">
+                <div class="form-group col-6-12 col-md-12">
                   <label class="select-label" for="framework">Framework</label>
                   <select
                     class="select-input"
                     v-model="newApp.framework"
-                    width="204px"
+                    width="100%"
                     name="framework"
                     id="framework"
                   >
@@ -237,8 +237,8 @@
                 v-model="appInfo.name"
                 placeholder="Application name"
               />
-              <div class="flex flex-spaced">
-                <div class="form-group">
+              <div class="grid__layout grid-gap-0">
+                <div class="form-group col-6-12 col-md-12">
                   <label class="select-label" for="app-type">Type</label>
                   <select
                     class="select-input"
@@ -251,7 +251,7 @@
                     <option value="Mobile">Mobile</option>
                   </select>
                 </div>
-                <div class="form-group">
+                <div class="form-group col-6-12 col-md-12">
                   <label class="select-label" for="framework">Framework</label>
                   <select
                     class="select-input"
