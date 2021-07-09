@@ -1,0 +1,76 @@
+// padding and margin utility classes e.g .p-* && .m-*
+@for $i from 0 through 10 {
+	.p {
+		&-#{$i} {
+			padding: #{$i}rem;
+		}
+		&y-#{$i} {
+			padding-top: #{$i}rem;
+			padding-bottom: #{$i}rem;
+		}
+		&x-#{$i} {
+			padding-left: #{$i}rem;
+			padding-right: #{$i}rem;
+		}
+		&t-#{$i} {
+			padding-top: #{$i}rem;
+		}
+		&b-#{$i} {
+			padding-bottom: #{$i}rem;
+		}
+		&l-#{$i} {
+			padding-left: #{$i}rem;
+		}
+		&r-#{$i} {
+			padding-right: #{$i}rem;
+		}
+	}
+	.m {
+		&-#{$i} {
+			margin: #{$i}rem !important;
+		}
+		&y-#{$i} {
+			margin-top: #{$i}rem !important;
+			margin-bottom: #{$i}rem !important;
+		}
+		&x-#{$i} {
+			margin-left: #{$i}rem !important;
+			margin-right: #{$i}rem !important;
+		}
+		&t-#{$i} {
+			margin-top: #{$i}rem !important;
+		}
+		&b-#{$i} {
+			margin-bottom: #{$i}rem !important;
+		}
+		&l-#{$i} {
+			margin-left: #{$i}rem !important;
+		}
+		&r-#{$i} {
+			margin-right: #{$i}rem !important;
+		}
+	}
+}
+
+.u {
+	&-relative {
+		position: relative;
+	}
+	&-absolute {
+		position: absolute;
+	}
+}
+.ml-auto {
+	margin-left: auto;
+}
+
+.mr-auto {
+	margin-right: auto;
+}
+@include query(mobile, max) {
+    .grid__layout{
+        .col-md-12 {
+            grid-column: span 12 !important
+        }
+	}
+}

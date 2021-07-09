@@ -1,0 +1,19 @@
+// fonts
+$base-font-size: 100%;
+
+//colors
+$primary: #007bff;
+$secondary: #727cf5;
+$accent: #4e5bf2;
+
+$primary-text: #007bff;
+$grey-text: #333758;
+$red-text: #fe6159;
+$border-color: #ebebf2;
+
+// media query breakpoints
+$breakpoints: (
+	'mobile': 480px,
+	'tablet': 769px,
+	'desktop': 1024px
+) !default;

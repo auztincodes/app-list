@@ -1,0 +1,45 @@
+@import '../../assets/scss/main.scss';
+
+.form-label {
+		display: block;
+		margin-bottom: 12px !important;
+		.required{
+			color: $red-text;
+		}
+	}
+.form-input {
+	width: 240px;
+	height: 46px;
+	border-radius: 1px;
+	border: solid 1px $border-color;
+	padding: 0 16px;
+	color: $grey-text;
+
+	&::placeholder {
+		color: #989aaa;
+	}
+	&:focus,
+	&:focus-within {
+		outline: none;
+		background: #fff;
+		border: solid 1px $accent;
+	}
+	
+}
+.form-input--error {
+    border-color: $red-text;
+    color: $red-text;
+    &:focus,
+    &:focus-within {
+        border-color: $red-text;
+    }
+}
+.input-error--msg {
+    color: $red-text;
+    display: block;
+    margin-top: 10px;
+}
+.text-area {
+	padding-top: 15px;
+	height: inherit;
+}
