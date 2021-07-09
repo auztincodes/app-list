@@ -115,7 +115,6 @@ export default {
       try {
         const response = await this.createApp(this.newApp);
         const { status } = response;
-        console.log(response);
         if (status === 201) {
           this.toggleModalClass('showCreateApp');
           await this.fetchApps();
