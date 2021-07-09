@@ -3,8 +3,10 @@ import { mapActions, mapMutations } from 'vuex';
 import CButton from '@/components/Button';
 import CInput from '@/components/Input';
 import Loader from '@/components/Loader';
+import errowMixin from '@/mixins/errorMethod';
 export default {
   name: 'Login',
+  mixins: [errowMixin],
   components: {
     ValidationObserver,
     CInput,
@@ -36,13 +38,7 @@ export default {
         this.$router.push('/');
         return true;
       } catch (error) {
-        error.response.data.non_field_errors.forEach((error) => {
-          this.$notify({
-            type: 'error',
-            title: 'Error',
-            text: error,
-          });
-        });
+        this.displayError(error);
       } finally {
         this.loading = false;
       }
